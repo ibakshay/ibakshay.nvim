@@ -11,6 +11,9 @@ map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 --- add yours here
 
+-- Kubectl mappings
+map("n", "<leader>ka", "<cmd>w !kubectl apply -f -<CR>", { desc = "Kubectl apply buffer" })
+map("n", "<leader>kd", "<cmd>w !kubectl delete -f -<CR>", { desc = "Kubectl delete buffer" })
 
 -- Fix the <leader>ss mapping to correctly call Telescope Document Symbols
 map("n", "<leader>ss", function()
@@ -25,9 +28,4 @@ map("n", "<leader>sf", function()
 end, { desc = "Telescope: File Functions (Filtered)" })
 
 
--- Tmux/Nvim seamless pane navigation
-map("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Navigate to left pane" })
-map("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "Navigate to lower pane" })
-map("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", { desc = "Navigate to upper pane" })
-map("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Navigate to right pane" })
 
