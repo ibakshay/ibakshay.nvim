@@ -27,5 +27,13 @@ map("n", "<leader>sf", function()
     })
 end, { desc = "Telescope: File Functions (Filtered)" })
 
+-- Find all references of the symbol under the cursor
+map("n", "<leader>sr", function()
+    require('telescope.builtin').lsp_references()
+end, { desc = "Telescope: Symbol References", silent = true })
 
+-- Find all implementations of the interface or struct under the cursor
+map("n", "<leader>si", function()
+    require('telescope.builtin').lsp_implementations()
+end, { desc = "Telescope: Symbol Implementations", silent = true })
 
