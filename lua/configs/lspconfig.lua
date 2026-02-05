@@ -1,6 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "gopls", "cue", "typescript", "typescriptreact", "yamlls", "jsonls", "bashls", "pyright", "helm_ls" }
+local servers = { "html", "cssls", "gopls", "cue", "vtsls", "yamlls", "jsonls", "bashls", "pyright", "helm_ls" }
 vim.lsp.enable(servers)
 
 -- Auto organize imports for Go on save
