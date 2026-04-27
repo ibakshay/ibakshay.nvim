@@ -12,11 +12,15 @@ return {
       })
 
       -- Cycle suggestions
-      vim.keymap.set('i', '<C-n>', '<Plug>(copilot-next)')
-      vim.keymap.set('i', '<C-p>', '<Plug>(copilot-previous)')
+      vim.keymap.set('i', '<C-.>', '<Plug>(copilot-next)')
+      vim.keymap.set('i', '<C-,>', '<Plug>(copilot-previous)')
 
       -- Dismiss
       vim.keymap.set('i', '<C-e>', '<Plug>(copilot-dismiss)')
+
+      -- Accept word / line
+      vim.keymap.set('i', '<C-y>', '<Plug>(copilot-accept-word)')
+      vim.keymap.set('i', '<C-g>', '<Plug>(copilot-accept-line)')
 
     end,
   },
