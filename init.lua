@@ -1,5 +1,6 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 -- German keyboard mappings
 vim.opt.langmap = "ö[,ä],Ö{,Ä}"
 -- bootstrap lazy and all plugins
